@@ -10,8 +10,11 @@ function onScroll(){
         // console.log(target)
         var tagretStart = target.position().top
         var targetHeight = target.outerHeight()
-        var tagretStartC = target.position().top.toFixed()
-        var targetHeightC = target.outerHeight().toFixed()
+        // var tagretStartC = target.position().top.toFixed()
+        // var targetHeightC = target.outerHeight().toFixed()
+        var tagretStartC = Math.floor(target.position().top)
+        var targetHeightC = Math.floor(target.outerHeight())
+
         var targetStartAndHeight = parseInt(tagretStartC) + parseInt(targetHeightC)
         console.log(targetStartAndHeight)
         
