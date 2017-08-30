@@ -1,6 +1,8 @@
 function onScroll(){
     var scroll_top = $(window).scrollTop();
-    console.log(scroll_top)
+    // console.log(scroll_top)
+    $('.pskk i:eq(0)').html('')
+    $('.pskk i:eq(0)').append(scroll_top)
     $('nav a').each(function()
     {
         var hash = $(this).attr("href");
@@ -12,6 +14,8 @@ function onScroll(){
         var targetHeightC = target.outerHeight().toFixed()
         var targetStartAndHeight = parseInt(tagretStartC) + parseInt(targetHeightC)
         console.log(targetStartAndHeight)
+        
+
         // console.log(tagretStart.toFixed())
         // console.log(targetHeight.toFixed())
 
@@ -20,6 +24,10 @@ function onScroll(){
             // $('nav + a.active').removeClass("active");
             // $(this > '.dot').removeClass("active");
             $(this).addClass("active");
+            $('.pskk i:eq(1)').html('')
+            $('.pskk i:eq(1)').append(tagretStart)
+            $('.pskk i:eq(2)').html('')
+            $('.pskk i:eq(2)').append(targetStartAndHeight)
 
         } else 
         {

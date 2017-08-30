@@ -139,7 +139,6 @@ header {
   left: calc(50% + 132px); }
 
 footer {
-  height: 50vh;
   padding: 60px 0;
   background-color: #000;
   font-size: 14px;
@@ -238,7 +237,16 @@ footer {
 #contact {
   background-image: url("../img/contact-bg.png"); }
   #contact .container {
-    min-height: 60vh;
+    min-height: 100vh;
     color: #fff; }
+
+.pskk {
+  position: fixed;
+  top: 50px;
+  left: 50px;
+  padding: 10px;
+  background-color: #000;
+  color: #fff;
+  border: 2px solid #fff; }
 
 /*# sourceMappingURL=main.css.map */

@@ -3,7 +3,7 @@
 git config --global --unset core.autocrlf
 git config core.autocrlf false
 
-  git add README.md
+  git add .
   git commit -m "first commit"
   git remote add origin https://github.com/PasAleksej/pasaleksej.github.io.git
   git push -u origin master
