@@ -41,8 +41,8 @@ function onScroll(){
 
 $('document').ready(function()
 {
-	heightChild = $('.about div').css('height')
-	$('.about').height(heightChild)
+	// heightChild = $('.about div').css('height')
+	// $('.about').height(heightChild)
 	$('.button').mousedown(function()
 	{
 		$(this).css('transform', 'scale(0.8)')
@@ -138,6 +138,24 @@ $('document').ready(function()
 	})
 
 	$(document).on("scroll", onScroll);
+
+	if( $('.floating-labels').length > 0 ) floatLabels();
+ 
+	function floatLabels() 
+	{
+		var inputFields = $('.floating-labels .cd-label').next();
+		
+		inputFields.each(function(){
+			var singleInput = $(this);
+			
+			singleInput.keyup(function(){
+				checkVal(singleInput);	
+			});
+		});
+	}
+	function checkVal(inputField) {
+		( inputField.val() == '' ) ? inputField.prev('.cd-label').removeClass('float') : inputField.prev('.cd-label').addClass('float');
+	}
 
 });
 

@@ -119,7 +119,7 @@
 </section>
 
 <section id="about">
-	<div class="container">
+	<div class="container" style="padding-bottom: 50px">
 		<div class="title">
 			<h2>about us</h2>
 			<p>Proin iaculis purus consequat sem cure.</p>
@@ -169,7 +169,7 @@
 				</p>
 			</div>
 		</div>
-		<div class="about">
+		<div class="about" style="margin-bottom: 0">
 			<img src="img/about4.jpg" alt="">
 			<div class="about__text__right">
 				<h2>
@@ -193,6 +193,29 @@
 			<h2>contact us</h2>
 			<p>Proin iaculis purus consequat sem cure.</p>
 		</div>
+		<form class="cd-form floating-labels" method="post" id="forma">
+			<div class="one">
+				<div class="icon">
+					<label class="cd-label" for="cd-name">YOUR NAME *</label>
+					<input class="user" name="cd-name" autocomplete="off" type="text" id="cd-name" required>
+				</div>
+				<div class="icon">
+					<label class="cd-label" for="mail">TOUR E-MAIL *</label>
+					<input name="mail" type="text" autocomplete="off" required>
+				</div>
+				<div class="icon">
+					<label class="cd-label" for="subject">SUBJECT</label>
+					<input name="subject" type="text" autocomplete="off">
+				</div>
+			</div>
+			<div class="two">
+				<div class="icon">
+					<label class="cd-label" for="subject">YOUR MESSAGE *</label>
+					<textarea name="message" id="" cols="30" rows="10"></textarea>
+				</div>
+			</div>
+			<input class="button" type="submit" value="Send Message">
+		</form>
 	</div>
 </section>
 
